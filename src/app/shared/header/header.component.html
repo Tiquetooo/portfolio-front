@@ -1,11 +1,13 @@
-<div id="container-header" class="flex flex-col align-center">
-    <nav class="list-items-navbar flex-grow pl-2 relative">
-        <!-- Ajout de la classe relative au conteneur pour positionner l'input de manière absolue -->
-        <ul class="flex space-x-4 justify-start">
-          <!-- Utilisation de 'justify-start' pour aligner les éléments à gauche -->
-          <li class="item-navbar"><a [routerLink]="['/']">Accueil</a></li>
-          <li class="item-navbar"><a [routerLink]="['/shoots']">Shoots</a></li>
-          <li class="item-navbar"><a [routerLink]="['/tiqueto']">Tiqueto</a></li>
+<div id="container-header" class="flex flex-col items-center">
+    <nav class="w-full flex justify-between p-4 bg-white text-black">
+        <ul class="flex justify-start">
+            <li><a [routerLink]="['/']">Accueil</a></li>
+        </ul>
+        <ul class="absolute left-1/2 transform -translate-x-1/2">
+            <li><a [routerLink]="['/shoots']">Shoots</a></li>
+        </ul>
+        <ul class="flex justify-end">
+            <li><a [routerLink]="['/tiqueto']">Tiqueto</a></li>
         </ul>
     </nav>
 </div>
