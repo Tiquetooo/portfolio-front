@@ -1,7 +1,9 @@
 <p>{{ projet.name }} works!</p>
 
-<div class="carousel">
+<div class="carousel-container" #carousel>
+  <div class="carousel">
     <div *ngFor="let image of images" class="carousel-item">
       <img [src]="image" alt="Image du projet">
     </div>
   </div>
+</div>

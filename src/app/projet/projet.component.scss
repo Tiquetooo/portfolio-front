@@ -1,0 +1,32 @@
+.carousel-container {
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .carousel {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto; /* Permet le défilement horizontal */
+    scroll-behavior: smooth; /* Défilement doux */
+    -webkit-overflow-scrolling: auto;
+    height: 500px;
+  }
+
+  .carousel-item {
+    flex: 0 0 auto; /* Empêche l'élément de se redimensionner */
+    margin-right: 10px; /* Espacement entre les éléments */
+    height: 100%;
+  }
+  
+  .carousel-item img {
+    height: 100%; /* Fixe la hauteur de l'image à celle du conteneur */
+    object-fit: cover; /* Conserve le ratio de l'image tout en remplissant l'espace disponible */
+    width: auto; /* Ajuste la largeur automatiquement en fonction de la hauteur */
+    border-radius: 8px;
+  }
+  
+  .carousel {
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+    scrollbar-width: none;  /* Firefox */
+  }
+  
