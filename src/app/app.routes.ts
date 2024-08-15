@@ -8,6 +8,7 @@ import { ProjetComponent } from './projet/projet.component';
 export const routes: Routes = [
     { path: '', component: AccueilComponent },
     { path: 'shoots', component: ListProjetsComponent},
+    { path: 'shoot/:id', component: ProjetComponent},
     { path: 'projet', component: ProjetComponent},
     { path: 'tiqueto', component: AboutComponent}
 ];

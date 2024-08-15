@@ -1,1 +1,6 @@
-<p>list-projets works!</p>
+<div class="projets-list">
+    <div *ngFor="let projet of projets" class="projet-item" (click)="goToProjet(projet.id)">
+      <img [src]="projet.image" [alt]="projet.name">
+      <h3>{{ projet.name }}</h3>
+    </div>
+  </div>
